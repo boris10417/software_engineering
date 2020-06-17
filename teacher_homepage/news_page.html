@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>news_page</title>
+        <link rel="stylesheet" href="teacher_style.css">
+        
+    </head>
+    <body>
+        <div>
+            <h1>消息頁面</h1>
+        </div>
+
+        <input id = "edit" type="button" value="變更密碼">
+
+        <input id = "out" type="button" value="登出">
+
+        <div id="display_complete_news_table">
+            <!--  style=border-spacing:行距px 列距px   -->
+            <table id="news_table" class="complete_news_table">
+                <!--(text)消息id,(buttun)修改消息,(buttun)刪除消息,課程,作業說明,(buttun)題目檔案(下載),截止日期,(button)評分作品(進入works page)-->
+                <tr><!--標題列-->
+                    <td>No.</td>
+                    <td>修改消息</td>
+                    <td>刪除消息</td>
+                    <td>課程</td>
+                    <td>作業說明</td>
+                    <td>題目檔案下載</td>
+                    <td>截止日期</td>
+                    <td>評分作品</td>
+                </tr>
+                
+                <!--依此append-->
+            </table>
+            <p style="text-align:center">
+                <input class="add" type="button" value="添加消息">
+                <div style="display: none;" id="div_for_add_news">
+                </div>
+            </p>
+            <p style="text-align:center"><a id = "news_page_to_home_page" href=""></a></p>  
+        </div>
+        
+
+
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCT6qqvxhEodPQKpMl2DfNKeENkT2QSjmY",
+            authDomain: "login-64674.firebaseapp.com",
+            databaseURL: "https://login-64674.firebaseio.com",
+            projectId: "login-64674",
+            storageBucket: "login-64674.appspot.com",
+            messagingSenderId: "797547162691",
+            appId: "1:797547162691:web:f0403f2c716db40240f8f6",
+            measurementId: "G-RZ45JMK6HW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="teacher.js" async defer></script>
+
+        
+    </body>
+</html>
+
+
+
+
+

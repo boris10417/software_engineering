@@ -1,0 +1,48 @@
+td{
+    text-align: left;
+    margin-left: 10px;
+}
+#simple_news_table{
+    text-align: left;
+    margin: auto;
+    border-spacing:10px 10px;
+    background-color: pink;
+    color:darkred;
+    font-size: 50px;
+}
+
+.complete_news_table{
+    text-align: left;
+    margin: auto;
+    border-spacing:60px 10px;
+    background-color: pink;
+}
+#div_for_add_news{
+    margin: auto;
+    background-color: pink;
+}
+
+
+
+h1{
+    text-align: center;
+}
+
+
+#items_table{
+    text-align: left;
+    margin: auto;
+    border-spacing:60px 10px;
+    background-color: pink;
+
+}
+
+#edit{
+    position: relative;
+    left: 1075px;
+}
+
+#out{
+    position: relative;
+    left: 45px;
+}

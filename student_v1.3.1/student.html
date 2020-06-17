@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="student.js"></script>      
+    </head>
+    <body>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCT6qqvxhEodPQKpMl2DfNKeENkT2QSjmY",
+            authDomain: "login-64674.firebaseapp.com",
+            databaseURL: "https://login-64674.firebaseio.com",
+            projectId: "login-64674",
+            storageBucket: "login-64674.appspot.com",
+            messagingSenderId: "797547162691",
+            appId: "1:797547162691:web:f0403f2c716db40240f8f6",
+            measurementId: "G-RZ45JMK6HW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+
+        <h1 id="homepage" align="center"></h1>
+
+
+        <input id = "edit" type="button" value="變更密碼">
+        <input id = "out" type="button" value="登出">
+
+        
+        <table id="student" border="1" cellpadding="5" align="center" width=1000px>
+            <tr>
+                <td align="center" bgcolor="lightskyblue" rowspan="2" width=100px>
+                    作業編號
+                </td>
+    
+                <td align="center" bgcolor="lightskyblue" width=100px>
+                    課程名稱
+                </td>
+                <td align="center" bgcolor="lightskyblue" rowspan="2" width=100px>
+                    附件
+                </td>
+    
+                <td align="center" bgcolor="lightskyblue" rowspan="2" width=100px>
+                    截止日
+                </td>
+                
+                <td align="center" bgcolor="lightskyblue" rowspan="2">
+                    作業上傳區
+                </td>
+                <td align="center" bgcolor="lightskyblue" rowspan="2" width=100px>
+                    分數
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="lightskyblue" width=100px >
+                    作業章節
+                </td>
+            </tr>
+        </table>
+        <br><br><br><br>
+    </body>
+</html>

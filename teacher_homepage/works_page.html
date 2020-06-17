@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>works_page</title>
+        <link rel="stylesheet" href="teacher_style.css">
+        
+    </head>
+    <body>
+        <div>
+            <h1>作品頁面</h1>
+            <h2 style="text-align: center;" id="lesson"></h3>
+            <h3 style="text-align: center;" id="hw_no"></h3>
+        </div>
+
+        <input id = "edit" type="button" value="變更密碼">
+
+        <input id = "out" type="button" value="登出">
+
+        <div >
+            <!--  style=border-spacing:行距px 列距px   -->
+            <table id="items_table">
+                
+            </table>
+            <p id="go_to_last_page" style="text-align:center"> </p>
+        </div>
+
+
+
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCT6qqvxhEodPQKpMl2DfNKeENkT2QSjmY",
+            authDomain: "login-64674.firebaseapp.com",
+            databaseURL: "https://login-64674.firebaseio.com",
+            projectId: "login-64674",
+            storageBucket: "login-64674.appspot.com",
+            messagingSenderId: "797547162691",
+            appId: "1:797547162691:web:f0403f2c716db40240f8f6",
+            measurementId: "G-RZ45JMK6HW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="works_page.js" async defer></script>
+
+        
+    </body>
+</html>
+
+
+
+
+<!--
+    
+                
+<tr>--標題列--
+    <td>範例:學生id</td>
+    <td><input type="button" value="下載作品"></td>
+    <td>範例評分:<input type="number" id="score"></td>
+</tr>
+
+-->

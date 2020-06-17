@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+
+#student{
+    /*字數過多時自動換行*/
+    word-break: break-all;
+}
+
+#edit{
+    position: relative;
+    left: 460px;
+}
+
+#out{
+    position: relative;
+    right: 510px;
+}
